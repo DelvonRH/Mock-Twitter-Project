@@ -1,0 +1,36 @@
+.header
+{
+    color: #F5F8FA;
+    font-weight: 600;
+    font-size: larger;
+    padding-left: 20px;
+
+}
+
+.header-end
+{
+    color: #F5F8FA;
+    width: 25px;
+    padding-right: 40px;
+}
+
+.header p, .header-end p
+{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.header-end button:hover
+{
+    background-color: #1c1c1c;
+    border: #1c1c1c;
+    opacity: 2;
+}
+
+.header-end button
+{
+    border-radius: 30px;
+    border: 1px solid #0b0d0e;
+    background-color: #0b0d0e;
+    color: #F5F8FA;
+}

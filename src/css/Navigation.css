@@ -1,0 +1,65 @@
+.nav-item
+{
+    padding-bottom: 16px;
+    font-size: 20px;
+}
+.nav-item button
+{
+    border-radius: 30px;
+    border: 1px solid #0b0d0e;
+    background-color: #0b0d0e;
+    color: #F5F8FA;
+    height: 48px;
+}
+
+.nav-item button:hover
+{
+    background-color: #1c1c1c;
+    border: #1c1c1c;
+    opacity: 2;
+}
+
+i::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+@media screen and (max-width: 400px) {
+    .tweet-button:before {
+        font: var(--fa-font-regular);
+        content: "\f1d8";
+    }
+}
+
+.nav-text
+{
+    padding-left: 16px;
+}
+
+.tweet-button
+{
+    font-size: 16px;
+    width: 200px;
+    font-weight: 600;
+    height: 45px;
+    background-color: #1DA1F2 !important;
+    color: #F5F8FA;
+    border: 1px solid #1DA1F2 !important;
+}
+
+.tweet-button:hover
+{
+    background-color: #146ea5 !important;
+    color: #F5F8FA;
+    border: 1px solid #146ea5 !important;
+}
+
+ul
+{
+    padding-right: 0;
+}
+
+li {
+    width: fit-content;
+}

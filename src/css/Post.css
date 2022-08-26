@@ -1,0 +1,35 @@
+.Post
+{
+ border-top: 1px solid rgb(64, 63, 63);  
+}
+
+.Body{
+    color: white;
+    padding: 16px 4px;
+    border-bottom: 1px solid rgb(64, 63, 63);
+    word-wrap: break-word;
+}
+
+.content{
+    width: 65%;
+}
+
+.userName{
+    font-size: smaller;
+    padding-right: 8px;
+    color: white;
+}
+
+.handle
+{
+    font-size: smaller;
+    color: rgb(101, 100, 100);
+}
+
+.postImg{
+    padding-right: 8px;
+    margin-left: 4px;
+    width: 45px;
+    height: 42px;
+}
+

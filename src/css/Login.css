@@ -1,0 +1,67 @@
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #fccb90;
+
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,161,242,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
+
+.col-lg-6
+{
+    background-color: #14171A;
+    color: white;
+}
+
+.prompt{
+    text-align: center;
+}
+
+.button2{
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+    height: 45px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,161,242,1) 0%, rgba(0,212,255,1) 100%);
+    color: #F5F8FA;
+    border: 1px solid #1DA1F2 !important;
+}
+
+.btn-create{
+    border:  1px solid rgba(0,212,255,1);
+    color: rgba(0,212,255,1)
+}
+
+.btn-create:hover{
+    background-color: rgba(0,212,255,1);
+    border:  1px solid rgba(0,212,255,1);
+    color: white;
+}
+
+.custom-border{
+   border:  1px solid rgba(0,212,255,1);
+}
+
+#form2Example11
+{
+    background-color: rgb(64, 63, 63);
+    color: white;
+}
+
+#form2Example22
+{
+    background-color: rgb(64, 63, 63);
+    color: white;
+}
