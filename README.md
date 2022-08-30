@@ -92,7 +92,7 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
+## Notes / Bugs
 
 DISCLAIMER: **This App is currently not deployed in this version!**
 
@@ -101,3 +101,7 @@ This current version of the Mock-Twiiter-Project is unable to post because of a 
 ## Open-source libraries used
 
 - [React](https://reactjs.org/) - A Javascript library for building user interfaces
+
+## Link to Github Profile
+
+https://github.com/DelvonRH
