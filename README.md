@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # *Mock-Twitter-Project Part I*
 
-**Mock-Twitter-Project** is an web app that allows a user to view and post a tweet. 
+**Mock-Twitter-Project** is an web app that allows a user to view and post a tweet this is a project that is inspired by twitter so it is designed to almost look like it. 
 
 ## User Stories
 
@@ -93,6 +93,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+
+DISCLAIMER: **This App is currently not deployed in this version!**
 
 This current version of the Mock-Twiiter-Project is unable to post because of a bug with the disabled tweet button. It was very challenging to make this web application reponsive so it is still a work in progress as some items on screen do not scale with different sizes which makes the page look weird. This version of the project does not have a database so on page refresh everything disapears. 
 
