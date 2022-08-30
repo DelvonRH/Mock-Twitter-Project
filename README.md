@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # *Mock-Twitter-Project Part I*
 
-**Mock-Twitter-Project** is an web app that allows a user to view thier tweets and post a new tweet. 
+**Mock-Twitter-Project** is an web app that allows a user to view and post a tweet. 
 
 ## User Stories
 
