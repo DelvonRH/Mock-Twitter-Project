@@ -96,7 +96,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 DISCLAIMER: **This App is currently not deployed in this version!**
 
-This current version of the Mock-Twiiter-Project is unable to post because of a bug with the disabled tweet button. It was very challenging to make this web application reponsive so it is still a work in progress as some items on screen do not scale with different sizes which makes the page look weird. This version of the project does not have a database so on page refresh everything disapears. 
+This version of the Mock-Twitter-Project is currently unable to post because of a bug with the disabled tweet button. It is very challenging to make this web application responsive; however, because this is the first version, it is still a work in progress. Some items on the screen do not scale with different sizes, which makes the page look weird. This version of the project does not have any persistence, so refreshing the page deletes, everything.
 
 ## Open-source libraries used
 
