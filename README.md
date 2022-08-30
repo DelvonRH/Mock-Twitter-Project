@@ -77,8 +77,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 The following **required** functionality is completed:
 
-- [x] User can **compose and post a new tweet.**
-- [x] User can **sign in through fake login.**
+- [x] User can **compose and post a tweet.**
+- [x] User can **sign in through a fake login.**
 - [x] User can **view tweets submitted which are displayed on the page.**
 
 The following **additional** features are implemented:
