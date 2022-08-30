@@ -69,4 +69,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# Mock-Twitter-Project
+# *Mock-Twitter-Project Part I*
+
+**Mock-Twitter-Project** is an web app that allows a user to view thier tweets and post a new tweet. 
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can **compose and post a new tweet.**
+- [x] User can **sign in through fake login.**
+- [x] User can **view tweets submitted which are displayed on the page.**
+
+The following **additional** features are implemented:
+- [x] App is using similar **"Twitter branded" colors and styles**
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+This current version of the Mock-Twiiter-Project is unable to post because of a bug with the disabled tweet button. It was very challenging to make this web application reponsive so it is still a work in progress as some items on screen do not scale with different sizes which makes the page look weird. This version of the project does not have a database so on page refresh everything disapears. 
+
+## Open-source libraries used
+
+- [React](https://reactjs.org/) - A Javascript library for building user interfaces
