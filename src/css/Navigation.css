@@ -30,6 +30,10 @@ i::before {
         font: var(--fa-font-regular);
         content: "\f1d8";
     }
+
+    .nav{
+        width: 30px;
+    }
 }
 
 .nav-text

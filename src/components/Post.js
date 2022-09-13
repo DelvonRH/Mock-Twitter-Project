@@ -1,8 +1,9 @@
 import "../css/Post.css"
-function Post({body, userName}) {
+import { auth } from "../firebase";
+function Post({body}) {
   console.log("Post props: " + JSON.stringify(body));
   return (
-    <div  className="Post">
+    <div className="Post">
         {body.map(post => {
             return (
               <div className="Body" key={post.id}>
@@ -11,12 +12,10 @@ function Post({body, userName}) {
                   src="https://www.gravatar.com/avatar/19f41f7f9559c25f79a72b6fb34f78e6"
                   alt="profileImage"
                 />
-                <span className="userName">{userName}</span>
-                <span className="handle">@{userName}</span>
+                <span className="userName">{auth.currentUser.displayName}</span>
+                <span className="handle">@{auth.currentUser.displayName}</span>
                 <br />
-                <span className="content">
-                {post.body}
-                </span>
+                <span className="content">{post.body}</span>
               </div>
             );
         })}

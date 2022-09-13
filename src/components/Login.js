@@ -1,18 +1,25 @@
 import "../css/Login.css";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
+import {
+  auth,
+  logInWithEmailAndPassword,
+} from "../firebase";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (user) navigate("/home");
+  }, [user, loading]);
 
-function Login({setUserName, userName}) {
-  const handleChange = (ev) => {
-    ev.preventDefault()
-    setUserName(ev.target.value);
-  }
-
- const handleSubmit = (ev) => {
-   ev.preventDefault();
-  console.log(userName);
-   setUserName(ev.target.value);
- };
-
+//  const handleSubmit = (ev) => {
+//    ev.preventDefault();
+//   console.log(userName);
+//    setUserName(ev.target.value);
+//  };
 
   return (
     <div className="container py-5">
@@ -28,30 +35,34 @@ function Login({setUserName, userName}) {
                   <form>
                     <p className="prompt">Please login to your account:</p>
                     <div className="form-outline mb-4">
-                      <input value={userName}
+                      <input
                         type="text"
-                        onChange={handleChange}
+                        onChange={(e) => setEmail(e.target.value)}
                         id="form2Example11"
                         className="form-control custom-border"
-                        placeholder="Username"
+                        placeholder="Email"
                       />
                     </div>
                     <div className="form-outline mb-4">
                       <input
                         type="password"
                         id="form2Example22"
+                        onChange={(e) => setPassword(e.target.value)}
                         className="form-control custom-border"
                         placeholder="Password"
                       />
                     </div>
                     <div className="text-center pt-1 mb-5 pb-1">
                       <Link to="/home">
-                      <button
-                        className="btn button2 btn-primary btn-block fa-lg mb-3"
-                        type="button"
-                      >
-                        Log in
-                      </button>
+                        <button
+                          className="btn button2 btn-primary btn-block fa-lg mb-3"
+                          type="button"
+                          onClick={() =>
+                            logInWithEmailAndPassword(email, password)
+                          }
+                        >
+                          Log in
+                        </button>
                       </Link>
                       <a className="text-muted" href="#!">
                         Forgot password?
@@ -62,10 +73,7 @@ function Login({setUserName, userName}) {
                       <p className="mb-0 me-2">
                         Don't have an account?&nbsp;&nbsp;
                       </p>
-                      <button
-                        type="button"
-                        className="btn btn-create btn-outline-danger"
-                      >
+                      <button type="button" className="btn btn-create ">
                         Create new
                       </button>
                     </div>

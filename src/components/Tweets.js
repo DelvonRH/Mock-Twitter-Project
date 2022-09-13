@@ -3,10 +3,10 @@ import Post from "./Post";
 import TextareaAutosize from "react-textarea-autosize";
 import {useState} from 'react'
 
-function Tweets({userName}) {
+function Tweets() {
   const [posts, setPosts] = useState([]);
   const [userInput, setUserInput] = useState("");
-  const [buttonEnabled, setButtonEnabled] = useState(true);
+  const [buttonDisabled, setButtonDisabled] = useState(true);
 
   const addPost = () => {
     console.log("Made it");
@@ -16,14 +16,16 @@ function Tweets({userName}) {
     };
     setPosts([...posts, post]);
     setUserInput("");
-    setButtonEnabled(!buttonEnabled);
+    setButtonDisabled(true);
     document.getElementById("#autoresizing").value = "";
   };
 
   function handleChange(event) {
     setUserInput(event.target.value);
-    if(!buttonEnabled)
-    setButtonEnabled(!buttonEnabled)
+    if (event.target.value.length) 
+    setButtonDisabled(false);
+    else
+      setButtonDisabled(true);
   }
 
   return (
@@ -46,13 +48,17 @@ function Tweets({userName}) {
             ></TextareaAutosize>
           </div>
           <div className="button-layout">
-            <button className="tweet-button2" id="btn-submit" onClick={addPost} 
-            disabled={buttonEnabled}>
+            <button
+              className="tweet-button2"
+              id="btn-submit"
+              onClick={addPost}
+              disabled={buttonDisabled}
+            >
               Tweet
             </button>
           </div>
         </div>
-        <Post body={posts} userName={userName} />
+        <Post body={posts} />
       </div>
     </div>
   );
