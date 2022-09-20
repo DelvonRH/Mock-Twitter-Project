@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# *Mock-Twitter-Project Part I*
+# *Mock-Twitter-Project Part I
 
 **Mock-Twitter-Project** is an web app that allows a user to view and post a tweet this is a project that is inspired by twitter so it is designed to almost look like it. 
 
@@ -97,6 +97,44 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 DISCLAIMER: **This App is currently not deployed in this version!**
 
 This version of the Mock-Twitter-Project is currently unable to post because of a bug with the disabled tweet button. It is very challenging to make this web application responsive; however, because this is the first version, it is still a work in progress. Some items on the screen do not scale with different sizes, which makes the page look weird. This version of the project does not have any persistence, so refreshing the page deletes, everything.
+
+## Open-source libraries used
+
+- [React](https://reactjs.org/) - A Javascript library for building user interfaces
+
+## Link to Github Profile
+
+https://github.com/DelvonRH
+
+# *Mock-Twitter-Project Part II*
+
+**Mock-Twitter-Project** is an web app that allows a user to view and post a tweet this is a project that is inspired by twitter so it is designed to almost look like it. 
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] Users post are **read from firestore real-time database.**
+- [x] User can **sign in through a login using authentication from firestore.**
+- [x] User can **register through a form and is saved using authentication from firestore.**
+- [x] User can **logout using firestore.**
+
+The following **additional** features are implemented:
+- [x] App is using similar **"Twitter branded" colors and styles**
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes / Bugs
+
+DISCLAIMER: **This App is currently not deployed in this version!**
+
+This version of the Mock-Twitter-Project currently has a bug with the logout. When the user wants to logout the time that it takes to successfully logout causes a bug in which the screen turns black. This is because the user is logged out before navigated back to the home screen. Styling has been difficult because the correct bootstrap classes has'nt been impplemented as I would have liked leaving a nonresponsive webpage still
 
 ## Open-source libraries used
 
